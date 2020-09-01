@@ -44,16 +44,22 @@
   // });
   
   $(window).on("scroll", function() {
-
     // console.log($(window).scrollTop().toString());
 
-    if($(window).scrollTop() > 635) {
+    if($(window).scrollTop() > 660) {
         $(".navi-gation").addClass("nav-active");
+        document.getElementsByClassName('img')[0].src = './Sid-logo.png';
+        document.getElementsByClassName('img')[0].width = 190;
+        document.getElementsByClassName('img')[0].height = 75;
     } else {
        $(".navi-gation").removeClass("nav-active");
+       document.getElementsByClassName('img')[0].src = './Artboard 3.png';
+        document.getElementsByClassName('img')[0].width = 240;
+        document.getElementsByClassName('img')[0].height = 120;
     }
 });
 </script>
+
 </head>
 <body>
 
@@ -111,7 +117,7 @@
 <header class="viewport-header">
 <div class="navi-gation">
   <div class="logo-container">
-      <img width=220px height=120px src="./Artboard 1@4x.png">
+      <img class="img" width=240px height=120px src="./Artboard 3.png">
   </div>
   <div class="list-container">            
           <ul class="lists">
@@ -121,7 +127,7 @@
                     </button>
                     <div class="dropdown-content">
                       <a href="logsig.html">Student</a>
-                      <a href="#">Expert</a>
+                      <a href="expert.html">Expert</a>
                     </div>
               </li>
               <!-- <li class="nav-list-items"><a href="">Get Started</a></li> -->
@@ -139,10 +145,6 @@
 
 <main class="main">
   
-  <div class="left">
-    <img width="500px" height="500px" src="./d8ac7a8e9f8bf25b1cf81b98c7ae0d76.gif" alt="">
-  </div>
-
   <div class="right">
     <p>Montana is a western state defined by its diverse terrain ranging from the Rocky Mountains to the Great Plains. Its wide-open spaces include Glacier National Park, a vast wilderness preserve that passes into Canada. The park’s many snow-capped peaks, lakes and alpine hiking trails are showcased along its famed Going-to-the-Sun Road, stretching 50 miles.
 
@@ -150,7 +152,15 @@
       
      
   </div>
+  <div class="left">
+    <img width="500px" height="500px" src="./5bcf5109367e1e5420a83e56330b9333.gif" alt="">
+  </div>
 </main>
+
+<div class="divider-container">
+  <div class="divider"></div>
+</div>
+
 <main class="main-1">
 
     <div class="main-1-heading">
@@ -163,7 +173,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img class="img-card" src="./icon-1.svg" alt="Avatar" style="width:80px;height:80px;margin: 50px;">
+            <img class="img-card" src="./apitherapy.png" alt="Avatar" style="width:80px;height:80px;margin: 50px;">
             <div class="name">Quick Clarity</div>
           </div>
           <div class="flip-card-back">
@@ -178,7 +188,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img class="img-card" src="./icon-2 (1).svg" alt="Avatar" style="width:80px;height:80px;margin: 50px;">
+            <img class="img-card" src="./labor-woman.png" alt="Avatar" style="width:80px;height:80px;margin: 50px;">
             <div class="name">Experienced Professionals</div>
           </div>
           <div class="flip-card-back">
@@ -193,7 +203,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img class="img-card"  src="./icon-3.svg" alt="Avatar" style="width:80px;height:80px;margin: 50px;">
+            <img class="img-card"  src="./3413307 (1).png" alt="Avatar" style="width:80px;height:80px;margin: 50px;">
             <div class="name">Personalized<br>Approach</div>
           </div>
           <div class="flip-card-back">
@@ -205,6 +215,9 @@
   </div>
 
 </main>
+<div class="divider-container">
+  <div class="divider"></div>
+</div>
 
 <main class="main-2">
   
@@ -269,6 +282,26 @@
       <!-- <img width="500px" height="500px" src="./70804f7e25b11f29db904f2fa7b4cd9d.gif" alt=""> -->
     </div>
   </div>
+
+</main>
+
+<div class="divider-container">
+  <div class="divider"></div>
+</div>
+
+<main class="main-read-more">
+  
+  <div class="left">
+    <img width="500px" height="400px" src="./views-opinions.png" alt="">
+  </div>
+
+  <div class="right">
+    <h2 class="line1">BLOGS & ARTICLES</h2>
+    <p class="line2">Read about our framework and the world of work</p>
+    <a href="#" class="read-more-button">Read More</a> 
+     
+  </div>
+
 
 </main>
 
@@ -362,7 +395,7 @@
         <h5>Quick links</h5>
         <ul class="list-unstyled quick-links">
           <li><a href="#"><i class="fa fa-angle-double-right"></i>Expert</a></li>
-          <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Admin</a></li>
+          <li><a href="admin-login.html"><i class="fa fa-angle-double-right"></i>Admin</a></li>
           <!-- <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
           <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
           <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li> -->

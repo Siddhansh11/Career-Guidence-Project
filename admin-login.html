@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp and Login</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/logsig.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+    <div class="navi-gation2">
+        <div class="logo-container">
+            <img width=190px height=75px src="./Sid-logo.png">
+        </div>
+        <div class="list-container">            
+                <ul class="lists">
+                    <li class="dropdown nav-list-items">
+                        <button class="dropbtn login-btn">Login
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-content">
+                            <a href="logsig.html">Student</a>
+                            <a href="#">Expert</a>
+                          </div>
+                    </li>
+                    <!-- <li class="nav-list-items"><a href="">Get Started</a></li> -->
+                    <li class="nav-list-items"><a href="">Blogs</a></li>
+                    <li class="nav-list-items"><a href="">Career Explorer</a></li>
+                    <li class="nav-list-items"><a href="index.html">Home</a></li>
+                </ul>               
+        </div>   
+      </div>
+
+
+    <!-- <div class="head-2">
+        <span class="logo"><img width=220px height=120px src="./Artboard 1@4x.png"></span>  -->
+           <!-- <a class="gul" href="#" id="logo"></a> -->
+         
+         <!-- <nav id="ravi"> 
+           <a class="sid" href="#">Home</a>
+           <a class="sid" href="#">Career Explorer</a>
+           <a class="sid" href="#">Blogs</a>
+           <a class="sid" href="#">Get Started</a>           
+
+            <div class="dropdown">
+                <button class="dropbtn">Login
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                 <a href="#">Student</a>
+                 <a href="#">Expert</a>
+               </div>
+            </div> -->
+
+           <!-- <a class="sid" href="#">Login</a> --> 
+         <!-- </nav>
+    </div> -->
+
+
+<div class="content-2">
+    <div class="loginContainer">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+
+            <script>
+                function showPass3() {
+                    var icon = document.getElementById('showPassEye3');
+                    var x = document.getElementById("mainPass");
+                        if (x.type === "password") {
+                            icon.classList.replace('fa-eye', 'fa-eye-slash');
+                            x.type = "text";
+                        } else {
+                            icon.classList.replace('fa-eye-slash', 'fa-eye');
+                            x.type = "password";
+                        }
+                }
+            </script>
+
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign In</h1>                
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" id="mainPass" placeholder="Password">
+                <i id="showPassEye3" class="fa eye fa-eye" onclick="showPass3()" aria-hidden="true"></i>
+                <a class="forgot" href="#">Forgot Password</a>
+            
+                <button class="sign-up-btn">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost sign-up-btn-ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Admin</h1>
+                        <p>Kya haal chal he aap ke :P</p>
+                    </div>
+                </div>
+            </div>
+            </div>        
+    </div>
+</div>
+
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+
+</body>
+</html>

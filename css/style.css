@@ -106,7 +106,8 @@ main {
   align-items: center;
   width: 100%;
   height: 80vh;
-  background-color: rgb(40, 55, 71);
+  /* background-color: rgb(40, 55, 71); */
+  /* background-color: rgba(134, 204, 176, 0.233); */
 }
 
 .cards {
@@ -120,7 +121,7 @@ main {
 
 
 .main-1-heading > h1{
-  color: #fff;
+  color: #000;
   text-align: center;
   margin-bottom: 100px;
   font-family: 'Manrope', sans-serif;
@@ -137,16 +138,26 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 190vh;
+  height: 170vh;
 }
-.main-3{
-  background-color: rgb(36, 34, 34);
+.main-read-more{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 90vh;
+}
+.main-3{
+  /* background-color: rgb(36, 34, 34); */
+  background-color: rgb(61, 58, 58); 
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
 }
 
 .left{
@@ -201,7 +212,8 @@ main {
 }
 
 .nav-active {
-  background-color: rgb(64,165 ,170 ) !important;
+  /* background-color: rgb(64,165 ,170 ) !important; */
+  background-color: rgb(31, 30, 30) !important;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -211,6 +223,13 @@ main {
   
   /* font-size: 17px; */
   /* overflow: hidden; */
+}
+
+.login-btn{
+  color: #fcc200 !important; 
+  font-size: 17px !important;
+  font-family: Montserrat,sans-serif !important;
+  font-weight: bold;
 }
 
 .dropdown .dropbtn {
@@ -224,6 +243,7 @@ main {
   font-family: Montserrat,sans-serif; 
   margin: 0;
 }
+
 
 .dropdown-content {
   display: none;
@@ -357,15 +377,36 @@ margin-right: 5px;
   left: 0;  
   padding: 0;
   z-index: 10000;
-  transition: all 0.2s ease-in-out;
-  height: 120px;
+  /* transition: all 0.2s ease-in-out; */
+  height: 90px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: rgba(102, 100, 100, 0);
+  
 }
+
+.navi-gation2{
+  position: fixed;
+  top: 0;
+  left: 0;  
+  padding: 0;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background-color: transparent; */
+  background-color: rgb(31, 30, 30) !important;
+  
+}
+
 
 .logo-container{
   display: flex;
@@ -374,6 +415,7 @@ margin-right: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* margin-bottom: 35px; */
 }
 
 .list-container{  
@@ -384,6 +426,7 @@ margin-right: 5px;
   justify-content: center;
   align-items: center;
   margin-right: 40px;
+  
 }
 
 .lists{
@@ -414,9 +457,14 @@ margin-right: 5px;
 }
 
 a {
-	color: #333 !important;
-	font-size: 17px;
-	text-decoration: none !important;
+  /* color: #333 !important; */
+  /* color:  rgb(72, 222, 248) !important; */
+  color: #fcc200 !important;
+  font-size: 17px;
+  font-weight: bold;
+  /* text-shadow: black 2px; */
+  text-shadow:  1px 1px 1px 1px #000;
+	text-decoration:none !important;
   margin: 15px 0;
   /* display: flex;
   text-align: center;
@@ -425,14 +473,15 @@ a {
 }
 .jain{
   margin-top: 19%;
-  font-size: 300%;
+  font-size: 450%;
   margin-left: 190px;
   /* opacity:; */
   /* font-weight: 200px; */
   font-weight:lighter; 
   color: black;
   /* font-family: 'Holtwood One SC', serif; */
-  font-family: Montserrat,sans-serif; 
+  font-family: Montserrat,sans-serif !important; 
+  /* font-family: 'Manrope', sans-serif !important; */
 }
 
 /* ---------------Corousal--------------------------- */
@@ -481,7 +530,8 @@ a {
 .prof-img{  
   width: 150px;
   height: 150px;
-  border: rgb(72, 222, 248) solid 4px;
+  /* border: rgb(72, 222, 248) solid 4px; */
+  border: #fcc200 solid 4px; 
   border-radius: 50%;
   overflow: hidden;
   /* background-color: #fff; */
@@ -586,12 +636,14 @@ a {
 }
 
 .flip-card-front {
-  background-color: #ffbf80;
+  /* background-color: #ffbf80; */
+  background-color: #92ee68; 
   color: black;
 }
 
 .flip-card-back {
-  background-color: #ccffff;
+  /* background-color: #ccffff; */
+  background-color: #5eebeb;
   color: white;
   transform: rotateY(180deg);
 }
@@ -621,7 +673,7 @@ a {
 
 .main-2-content{
   width: 100%;
-  height: 55vh;
+  height: 45vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -696,3 +748,58 @@ a {
   display: block;
   margin-top: 5px;  
 }
+
+.line1
+{
+  font-size: 40px;
+  color:rgb(72, 222, 248);
+  /* color: #fcc200; */
+}
+.line2
+{
+  font-size: 20px;
+}
+.read-more-button
+{
+  background-color: rgb(72, 222, 248);
+  padding:15px 20px 15px 20px ;
+  text-align: center;
+  border-radius: 50px;
+  color: #fff !important;
+}
+
+.divider-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;  
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.divider{
+  width:80%;
+  height: 4px;
+  background-color: rgba(114, 114, 114, 0.493) !important;
+  border-radius: 2px;
+}
+
+
+/* css for media queries */
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
